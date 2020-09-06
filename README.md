@@ -1,4 +1,4 @@
-## Nkosi Dilworth Aug 2020
+## Aug 2020
 
 ## Implementation using Angular
 
