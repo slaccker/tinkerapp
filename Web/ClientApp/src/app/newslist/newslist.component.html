@@ -1,0 +1,53 @@
+<h2>Newslist - Hacker News: Newest Stories</h2>
+
+<p *ngIf="!(newslist | async)"><em>Loading...</em></p>
+
+<div *ngIf="newslist | async">
+  <div class="container" style="padding-top: 20px;">
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Search ..."
+      [(ngModel)]="filter"
+      name="filter"
+    />
+  </div>
+  <div class="container" style="padding-top: 20px;">
+    <div>
+      <ul class="news">
+        <li
+          *ngFor="
+            let newsStory of newslist
+              | async
+              | filter: filter
+              | paginate: { itemsPerPage: 15, currentPage: p }
+          "
+          [class.selected]="story === selectedStory"
+          (click)="onSelect(newsStory)"
+          class="story"
+        >
+          <span class="badge">{{ selectedStory.id }}</span>
+          <label>{{ newsStory.title }}</label>
+          <a href="{{ newsStory.url }}">
+            {{ newsStory.url }}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="pagination">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </ul>
+
+    <div *ngIf="selectedStory" class="selected-story">
+      <h2>{{ selectedStory.title | uppercase }} Detail</h2>
+      <div><span>id:</span> {{ selectedStory.id }}</div>
+      <div>
+        <label
+          >url:
+          <span class="url">{{ selectedStory.url }}</span>
+        </label>
+        <span class="detail">{{ selectedStory.Detail }}</span>
+      </div>
+    </div>
+  </div>
+</div>

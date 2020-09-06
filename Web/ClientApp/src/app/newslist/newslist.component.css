@@ -1,0 +1,34 @@
+ul.news {
+  list-style-type: none;
+  margin: 5px 1px;
+  padding: 5px;
+  width: 80%;
+  display: contents;
+}
+ul.news > li:nth-of-type(odd) {
+  background-color: whitesmoke;
+}
+ul.news > li {
+  width: 80%;
+  min-height: 3px;
+  padding: 5px;
+}
+li.story {
+  display: inline-block;
+  background-color: lightgray;
+}
+li.selectedStory {
+  display: inline;
+  background-color: aquamarine;
+}
+div.selected-story {
+  display: inline-block;
+  background-color: cadetblue;
+  border: 2px solid rgb(62, 191, 241);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.badge {
+  background-color: orange;
+}

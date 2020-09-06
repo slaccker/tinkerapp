@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ndilworth/Workspace/TinkerApp/UnitTests/UnitTests.csproj": {}
+  },
+  "projects": {
+    "/Users/ndilworth/Workspace/TinkerApp/UnitTests/UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ndilworth/Workspace/TinkerApp/UnitTests/UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "/Users/ndilworth/Workspace/TinkerApp/UnitTests/UnitTests.csproj",
+        "packagesPath": "/Users/ndilworth/.nuget/packages/",
+        "outputPath": "/Users/ndilworth/Workspace/TinkerApp/UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ndilworth/Workspace/TinkerApp/NuGet.Config",
+          "/Users/ndilworth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/ndilworth/Workspace/TinkerApp/Web/Web.csproj": {
+                "projectPath": "/Users/ndilworth/Workspace/TinkerApp/Web/Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ndilworth/Workspace/TinkerApp/Web/Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ndilworth/Workspace/TinkerApp/Web/Web.csproj",
+        "projectName": "Web",
+        "projectPath": "/Users/ndilworth/Workspace/TinkerApp/Web/Web.csproj",
+        "packagesPath": "/Users/ndilworth/.nuget/packages/",
+        "outputPath": "/Users/ndilworth/Workspace/TinkerApp/Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ndilworth/Workspace/TinkerApp/NuGet.Config",
+          "/Users/ndilworth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
